@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="it" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Segretaria Ahsen — Assistente digitale per WhatsApp, Gmail e Calendar</title>
+  <meta name="description" content="Segretaria Ahsen è l'assistente digitale privato di Ahsen Kurtoski: risponde su WhatsApp, prepara email e organizza il calendario. Ogni invio passa da un'approvazione.">
+  <meta name="author" content="Ahsen Kurtoski — Ahsen-Studio">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#09090b">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="Segretaria Ahsen — Assistente digitale per WhatsApp, Gmail e Calendar">
+  <meta property="og:description" content="Un'assistente privata che risponde su WhatsApp e prepara email e appuntamenti. Tu approvi, lei esegue.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Segretaria Ahsen",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Windows, Linux",
+    "description": "Assistente digitale privata che risponde ai messaggi WhatsApp, prepara email e organizza appuntamenti con approvazione umana.",
+    "author": { "@type": "Person", "name": "Ahsen Kurtoski" },
+    "featureList": [
+      "Risposte WhatsApp con nome del contatto",
+      "Bozze email con template HTML",
+      "Appuntamenti su Google Calendar",
+      "Approvazione umana prima di ogni invio"
+    ],
+    "inLanguage": "it"
+  }
+  </script>
+  <script>
+    try {
+      var savedTheme = localStorage.getItem('sa-theme');
+      if (savedTheme === 'light' || savedTheme === 'dark') {
+        document.documentElement.dataset.theme = savedTheme;
+      }
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Vai al contenuto</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Navigazione principale">
+      <a class="brand" href="index.html" aria-label="Segretaria Ahsen — home">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span class="brand-copy">
+          <span class="brand-name">Segretaria Ahsen</span>
+          <span class="brand-sub">by Ahsen-Studio</span>
+        </span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html" aria-current="page">Panoramica</a>
+        <a href="index.html#whatsapp">WhatsApp</a>
+        <a href="index.html#come-funziona">Come funziona</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+
+      <div class="nav-actions">
+        <a class="btn btn-ghost btn-small" href="mailto:cshop0784@gmail.com">Contatta</a>
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Passa al tema chiaro" aria-pressed="false">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+          </svg>
+        </button>
+
+        <details class="mobile-nav">
+          <summary aria-label="Apri menu di navigazione">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16"/>
+            </svg>
+          </summary>
+          <div class="mobile-panel">
+            <a href="index.html">Panoramica</a>
+            <a href="index.html#whatsapp">WhatsApp</a>
+            <a href="index.html#come-funziona">Come funziona</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Termini</a>
+            <a href="mailto:cshop0784@gmail.com">Contatta</a>
+          </div>
+        </details>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">
+          <span class="eyebrow-dot" aria-hidden="true"></span>
+          Assistente digitale privato · WhatsApp + Gmail + Calendar
+        </div>
+        <h1>
+          <span class="line">La tua segreteria.</span>
+          <span class="line gradient-text">Sempre sul pezzo.</span>
+        </h1>
+        <p class="lede">
+          Segretaria Ahsen risponde su WhatsApp, prepara le email e organizza il calendario.
+          Ogni invio e ogni appuntamento passano da te: l'assistente propone, tu approvi.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#come-funziona">
+            Scopri come funziona
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M7 17 17 7M7 7h10v10"/>
+            </svg>
+          </a>
+          <a class="btn btn-ghost" href="privacy.html">Informativa privacy</a>
+        </div>
+        <p class="creator-note">Ideato e sviluppato da <strong>Ahsen Kurtoski</strong> — Ahsen-Studio, Feltre (BL).</p>
+        <div class="trust-row">
+          <span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            Accesso Google con OAuth
+          </span>
+          <span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+            Nessuna password condivisa
+          </span>
+          <span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 22h8M12 18v4"/></svg>
+            Sul tuo computer
+          </span>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-glow"></div>
+        <div class="mock glass">
+          <div class="mock-head">
+            <span class="mock-avatar">MR</span>
+            <span class="mock-person">
+              <span class="mock-name">Cliente</span>
+              <span class="mock-sub">Richiesta informazioni</span>
+            </span>
+            <span class="badge"><span class="badge-dot"></span>Bozza</span>
+          </div>
+          <div class="mock-body">
+            <span>Messaggio ricevuto</span>
+            <p class="mock-quote">“Buongiorno, vorrei un sito per la mia attività a Feltre. Quanto costa e quanto tempo serve?”</p>
+          </div>
+          <div class="mock-actions">
+            <span class="pill pill-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg>
+              Approva
+            </span>
+            <span class="pill">Modifica</span>
+            <span class="mock-note">Nessun invio automatico</span>
+          </div>
+        </div>
+        <div class="mini-card">
+          <span class="mini-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>
+          </span>
+          <span>
+            <span class="mini-title">Appuntamento</span>
+            <span class="mini-sub">Giovedì · 10:30</span>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="cosa-fa">
+      <div class="section-head">
+        <span class="kicker">Cosa fa</span>
+        <h2>Il lavoro ripetitivo, gestito.</h2>
+        <p>Non un chatbot generico: una segreteria che conosce i tuoi servizi, il tuo tono e le tue regole. Prepara il lavoro, tu dai l'ultima parola.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature">
+          <span class="icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          </span>
+          <h3>Email, senza backlog</h3>
+          <p>Legge i thread, riconosce le richieste e prepara risposte nel tuo tono. I follow-up non restano indietro.</p>
+        </article>
+
+        <article class="feature">
+          <span class="icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>
+          </span>
+          <h3>Calendario in ordine</h3>
+          <p>Controlla la disponibilità, propone slot e prepara gli eventi. L'appuntamento esiste solo dopo il tuo via libera.</p>
+        </article>
+
+        <article class="feature">
+          <span class="icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-8.5 8.5 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.7a8.5 8.5 0 1 1 16.1-3.8z"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></svg>
+          </span>
+          <h3>Ti tiene al corrente</h3>
+          <p>Nuovi contatti, richieste urgenti e possibili truffe ti arrivano su WhatsApp, senza dover controllare tutto.</p>
+        </article>
+
+        <article class="feature">
+          <span class="icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          </span>
+          <h3>Approvazione prima di tutto</h3>
+          <p>Nessuna email parte e nessun evento viene creato senza il tuo consenso. Ogni azione resta tracciata.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="whatsapp">
+      <div class="section-head">
+        <span class="kicker">Su WhatsApp</span>
+        <h2>Risponde come una persona. Con i tuoi dati.</h2>
+        <p>Il primo contatto non è un modulo da compilare: è una conversazione. L'assistente saluta, ascolta e chiede solo ciò che serve.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature">
+          <span class="icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-8.5 8.5 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.7a8.5 8.5 0 1 1 16.1-3.8z"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></svg>
+          </span>
+          <h3>Sa con chi sta parlando</h3>
+          <p>Usa il nome del contatto WhatsApp e il contesto della chat. Niente "come ti chiami?" se il nome è già lì.</p>
+        </article>
+
+        <article class="feature">
+          <span class="icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          </span>
+          <h3>Risponde in pochi secondi</h3>
+          <p>Risposte brevi, una domanda alla volta. Anche fuori orario, senza lasciare il cliente in attesa.</p>
+        </article>
+
+        <article class="feature">
+          <span class="icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3h5v5"/><path d="M8 21H3v-5"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+          </span>
+          <h3>Regge più conversazioni</h3>
+          <p>Ogni numero resta separato. Cinque chat in parallelo non si mescolano e non perdono il filo.</p>
+        </article>
+      </div>
+
+      <div class="callout callout-spaced">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+        <span>Non è un chatbot generico: conosce i servizi, i prezzi e le regole di Ahsen. E quando non sa, passa la richiesta a una persona.</span>
+      </div>
+    </section>
+
+    <section class="section" id="permessi">
+      <div class="split">
+        <div>
+          <span class="kicker">Permessi Google</span>
+          <h2>Perché chiede accesso a Gmail e Calendar.</h2>
+          <p>
+            L'assistente non ha bisogno della tua password: riceve solo i permessi necessari per svolgere il lavoro che gli affidi.
+            Puoi controllare e revocare tutto dalle impostazioni Google, in qualsiasi momento.
+          </p>
+          <a class="btn btn-ghost btn-small" href="privacy.html#google">
+            Dettagli su accesso e revoca
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+          </a>
+        </div>
+        <div>
+          <ul class="check-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>
+              <span><strong>Gmail — lettura e invio.</strong> Serve per leggere i thread, preparare le bozze e inviare solo ciò che approvi.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>
+              <span><strong>Calendar — lettura e scrittura.</strong> Serve per controllare la disponibilità e creare l'evento dopo la tua conferma.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>
+              <span><strong>Nessun accesso ad altro.</strong> Il token resta sul computer con permessi ristretti e non viene condiviso con il browser.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>
+              <span><strong>Google API Limited Use.</strong> I dati Google non sono usati per pubblicità, profilazione o vendita.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="come-funziona">
+      <div class="section-head">
+        <span class="kicker">Come funziona</span>
+        <h2>Tre passaggi. Zero sorprese.</h2>
+        <p>L'accesso è trasparente e revocabile. Il controllo resta sempre nelle tue mani.</p>
+      </div>
+
+      <div class="steps">
+        <article class="step">
+          <span class="step-num">1</span>
+          <h3>Collega Google</h3>
+          <p>Autorizzi Gmail e Calendar tramite OAuth. Nessuna password viene condivisa con l'assistente. Puoi revocare l'accesso quando vuoi dalle <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">impostazioni Google</a>.</p>
+        </article>
+        <article class="step">
+          <span class="step-num">2</span>
+          <h3>L'assistente prepara</h3>
+          <p>Legge il contesto, scrive la bozza della risposta o propone l'appuntamento. Usa i tuoi prezzi, i tuoi servizi e le tue regole di sicurezza.</p>
+        </article>
+        <article class="step">
+          <span class="step-num">3</span>
+          <h3>Tu approvi</h3>
+          <p>Controlli la bozza dalla dashboard e premi Approva. Solo allora l'email viene inviata o l'evento creato. Se qualcosa non va, rifiuti e correggi.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="dati">
+      <div class="split">
+        <div>
+          <span class="kicker">Privacy by design</span>
+          <h2>I tuoi dati restano tuoi.</h2>
+          <p>
+            Segretaria Ahsen è un progetto privato, non un servizio pubblico.
+            L'assistente gira sul computer di Ahsen: i dati operativi e i token di accesso restano lì.
+          </p>
+          <a class="btn btn-ghost btn-small" href="privacy.html">
+            Leggi l'informativa completa
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+          </a>
+        </div>
+        <div>
+          <ul class="check-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>
+              <span><strong>Niente pubblicità.</strong> I dati Google non vengono usati per annunci, profilazione o vendita a terzi.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>
+              <span><strong>Solo ciò che serve.</strong> L'assistente usa i messaggi e gli eventi necessari a rispondere e organizzare; non li usa per altro.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>
+              <span><strong>Accesso revocabile.</strong> Puoi togliere il permesso a Google in qualsiasi momento; l'assistente smette di funzionare.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>
+              <span><strong>Google API Limited Use.</strong> I dati ricevuti dalle API Google sono usati solo per fornire le funzioni richieste.</span>
+            </li>
+          </ul>
+          <div class="callout">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+            <span>L'app è privata: l'accesso è riservato al titolare e ai collaboratori autorizzati. Non è un servizio SaaS aperto al pubblico.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="section-head">
+        <span class="kicker">Domande frequenti</span>
+        <h2>Le risposte, in breve.</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Quali permessi Google servono?</summary>
+          <p>Gmail in lettura e invio, per leggere i thread e preparare le risposte; Google Calendar in lettura e scrittura, per verificare la disponibilità e creare gli appuntamenti. L'accesso avviene tramite OAuth: la password del tuo account Google non viene mai condivisa con l'assistente.</p>
+        </details>
+        <details>
+          <summary>Le email partono da sole?</summary>
+          <p>No. L'assistente prepara una bozza e la sottopone ad approvazione. L'invio e la creazione dell'evento avvengono solo dopo un'azione esplicita dalla dashboard. Ogni operazione resta registrata.</p>
+        </details>
+        <details>
+          <summary>Dove vengono conservati i dati?</summary>
+          <p>I dati operativi e i token risiedono sul computer di Ahsen, in un ambiente locale protetto. I fornitori di intelligenza artificiale ricevono il testo strettamente necessario a generare la risposta. I dettagli, i fornitori e i tempi di conservazione sono nell'<a href="privacy.html">informativa privacy</a>.</p>
+        </details>
+        <details>
+          <summary>Posso revocare l'accesso?</summary>
+          <p>Sì. Da <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">Permessi account Google</a> puoi rimuovere l'accesso di Segretaria Ahsen in qualsiasi momento. Da quel momento l'assistente non può più leggere Gmail né modificare il calendario.</p>
+        </details>
+        <details>
+          <summary>L'intelligenza artificiale può sbagliare?</summary>
+          <p>Sì. L'assistente usa modelli linguistici e può produrre informazioni imprecise. Per questo ogni risposta viene rivista prima dell'invio. Non fornisce consulenza legale, fiscale, medica o finanziaria e non prende decisioni autonome su prezzi o impegni.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section" id="contatti">
+      <div class="section-head section-head-center">
+        <span class="kicker">Su misura</span>
+        <h2>Una segreteria così, sulla tua attività.</h2>
+        <p>Creato da <strong>Ahsen Kurtoski</strong> per Ahsen Studio. Se vuoi un assistente che conosca i tuoi servizi, il tuo tono e i tuoi strumenti, parliamone.</p>
+        <div class="hero-actions hero-actions-center">
+          <a class="btn btn-primary" href="mailto:cshop0784@gmail.com?subject=Segretaria%20digitale%20per%20la%20mia%20attivit%C3%A0">
+            Scrivi ad Ahsen
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="https://ahsen-studio.netlify.app" target="_blank" rel="noopener noreferrer">Vedi il portfolio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Segretaria Ahsen — home">
+            <span class="brand-mark" aria-hidden="true">S</span>
+            <span class="brand-copy">
+              <span class="brand-name">Segretaria Ahsen</span>
+              <span class="brand-sub">by Ahsen-Studio</span>
+            </span>
+          </a>
+          <p>Assistente digitale privato per WhatsApp, email, appuntamenti e follow-up. Progettato e gestito da Ahsen Kurtoski, Feltre (BL), Italia.</p>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h3>Prodotto</h3>
+            <a href="index.html">Panoramica</a>
+            <a href="index.html#whatsapp">WhatsApp</a>
+            <a href="index.html#permessi">Permessi Google</a>
+            <a href="index.html#come-funziona">Come funziona</a>
+            <a href="index.html#faq">Domande frequenti</a>
+          </div>
+          <div class="footer-col">
+            <h3>Legale</h3>
+            <a href="privacy.html">Informativa privacy</a>
+            <a href="terms.html">Termini di servizio</a>
+            <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">Revoca accesso Google</a>
+          </div>
+          <div class="footer-col">
+            <h3>Contatti</h3>
+            <a href="mailto:cshop0784@gmail.com">cshop0784@gmail.com</a>
+            <a href="https://ahsen-studio.netlify.app" target="_blank" rel="noopener noreferrer">Ahsen-Studio</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ahsen Kurtoski — Ahsen-Studio. Tutti i diritti riservati.</p>
+        <p>Pagina aggiornata al 27 ottobre 2026.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
