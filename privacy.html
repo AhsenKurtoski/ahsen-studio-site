@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="it" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Informativa privacy — Segretaria Ahsen</title>
+  <meta name="description" content="Informativa privacy di Segretaria Ahsen: dati Gmail e Google Calendar, finalità, conservazione, destinatari, diritti GDPR e Google API Limited Use.">
+  <meta name="author" content="Ahsen Kurtoski — Ahsen-Studio">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#09090b">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="Informativa privacy — Segretaria Ahsen">
+  <meta property="og:description" content="Come Segretaria Ahsen tratta i dati di Gmail, Google Calendar e WhatsApp.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    try {
+      var savedTheme = localStorage.getItem('sa-theme');
+      if (savedTheme === 'light' || savedTheme === 'dark') {
+        document.documentElement.dataset.theme = savedTheme;
+      }
+    } catch (e) {}
+  </script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Vai al contenuto</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Navigazione principale">
+      <a class="brand" href="index.html" aria-label="Segretaria Ahsen — home">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span class="brand-copy">
+          <span class="brand-name">Segretaria Ahsen</span>
+          <span class="brand-sub">by Ahsen-Studio</span>
+        </span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html">Panoramica</a>
+        <a href="index.html#whatsapp">WhatsApp</a>
+        <a href="index.html#come-funziona">Come funziona</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
+        <a href="terms.html">Termini</a>
+      </div>
+
+      <div class="nav-actions">
+        <a class="btn btn-ghost btn-small" href="mailto:cshop0784@gmail.com">Contatta</a>
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Passa al tema chiaro" aria-pressed="false">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+          </svg>
+        </button>
+
+        <details class="mobile-nav">
+          <summary aria-label="Apri menu di navigazione">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16"/>
+            </svg>
+          </summary>
+          <div class="mobile-panel">
+            <a href="index.html">Panoramica</a>
+            <a href="index.html#whatsapp">WhatsApp</a>
+            <a href="index.html#come-funziona">Come funziona</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Termini</a>
+            <a href="mailto:cshop0784@gmail.com">Contatta</a>
+          </div>
+        </details>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <header class="legal-hero">
+      <div class="eyebrow">
+        <span class="eyebrow-dot" aria-hidden="true"></span>
+        Trasparenza e controllo
+      </div>
+      <h1>Informativa <span class="gradient-text">privacy</span></h1>
+      <p class="lede">
+        Come Segretaria Ahsen tratta i dati di Gmail, Google Calendar e WhatsApp.
+        In breve: solo per rispondere e organizzare, con il tuo controllo, senza vendere nulla a nessuno.
+      </p>
+      <div class="legal-meta">
+        <span class="chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          Gmail
+        </span>
+        <span class="chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          Google Calendar
+        </span>
+        <span class="chip">GDPR · Reg. UE 2016/679</span>
+        <span class="chip">Ultimo aggiornamento: 26 ottobre 2026</span>
+      </div>
+    </header>
+
+    <div class="legal-layout">
+      <aside class="legal-toc" aria-label="Indice dell'informativa">
+        <strong>Indice</strong>
+        <a href="#titolare">1. Titolare</a>
+        <a href="#ambito">2. Ambito dell'app</a>
+        <a href="#dati">3. Dati trattati</a>
+        <a href="#finalita">4. Finalità e basi</a>
+        <a href="#google">5. Accesso Google</a>
+        <a href="#destinatari">6. Destinatari</a>
+        <a href="#conservazione">7. Conservazione</a>
+        <a href="#sicurezza">8. Sicurezza</a>
+        <a href="#diritti">9. I tuoi diritti</a>
+        <a href="#minori">10. Minori</a>
+        <a href="#sito">11. Cookie e sito</a>
+        <a href="#modifiche">12. Modifiche</a>
+        <a href="#limited-use">13. Google Limited Use</a>
+        <a href="#contatti">14. Contatti</a>
+      </aside>
+
+      <article class="legal-body">
+        <div class="notice">
+          <strong>In sintesi.</strong> Segretaria Ahsen è un assistente digitale privato, non un servizio pubblico.
+          Usa Gmail e Google Calendar solo per leggere, preparare risposte e gestire appuntamenti su richiesta del titolare.
+          Non vende dati, non li usa per pubblicità e non invia nulla senza approvazione.
+          Puoi revocare l'accesso Google in qualsiasi momento.
+        </div>
+
+        <div class="mini-grid" aria-label="Punti principali">
+          <div>
+            <strong>Solo per il servizio</strong>
+            <span>Email, calendario e messaggi servono a rispondere e organizzare. Nient'altro.</span>
+          </div>
+          <div>
+            <strong>Nessuna vendita</strong>
+            <span>Nessun dato personale viene venduto, affittato o ceduto per marketing.</span>
+          </div>
+          <div>
+            <strong>Tu approvi</strong>
+            <span>Ogni invio e ogni evento richiede un'azione esplicita del titolare.</span>
+          </div>
+          <div>
+            <strong>Revoca facile</strong>
+            <span>L'accesso Google si toglie da myaccount.google.com/permissions.</span>
+          </div>
+        </div>
+
+        <h2 id="titolare">1. Titolare del trattamento</h2>
+        <p>
+          Il titolare del trattamento è <strong>Ahsen Kurtoski</strong> — Ahsen-Studio, persona fisica,
+          con sede operativa a Feltre (BL), Italia.
+        </p>
+        <p>
+          Per qualsiasi richiesta relativa alla privacy puoi scrivere a
+          <a href="mailto:cshop0784@gmail.com">cshop0784@gmail.com</a>.
+          Il titolare risponde entro i termini previsti dal GDPR e, di norma, entro un mese.
+        </p>
+
+        <h2 id="ambito">2. Ambito dell'app</h2>
+        <p>
+          <strong>Segretaria Ahsen</strong> è un assistente digitale privato, installato e gestito sul computer
+          del titolare. Non è un servizio SaaS aperto al pubblico, non è un'app pubblicata sul Google Workspace
+          Marketplace e non è affiliata a Google, Meta o WhatsApp.
+        </p>
+        <p>
+          L'assistente è accessibile esclusivamente al titolare e a eventuali collaboratori espressamente
+          autorizzati. Questo sito ha funzione informativa: descrive l'app e pubblica le informazioni
+          richieste per l'accesso alle API Google. Il pannello di controllo dell'assistente è separato,
+          non è pubblico e non è raggiungibile da questo sito.
+        </p>
+        <p>
+          L'app può essere collegata a Gmail e Google Calendar tramite OAuth e a WhatsApp tramite un
+          client di messaggistica. WhatsApp è un servizio di Meta Platforms, Inc.; il trattamento effettuato
+          da Meta è disciplinato dalle condizioni e dall'informativa privacy di Meta.
+        </p>
+
+        <h2 id="dati">3. Dati trattati</h2>
+        <p>Per svolgere le funzioni richieste, l'assistente può trattare le seguenti categorie di dati.</p>
+
+        <h3>3.1 Account Google</h3>
+        <ul>
+          <li>nome, indirizzo email e immagine del profilo associate all'account che autorizza l'accesso;</li>
+          <li>identificativi OAuth e metadati tecnici necessari a mantenere e revocare l'autorizzazione.</li>
+        </ul>
+
+        <h3>3.2 Gmail</h3>
+        <ul>
+          <li>identificativi dei messaggi e dei thread;</li>
+          <li>mittente, destinatari, data e oggetto;</li>
+          <li>contenuto del messaggio e degli eventuali allegati, nella misura necessaria a comprendere e gestire la richiesta;</li>
+          <li>etichette, stato di lettura e altri metadati necessari a organizzare la casella;</li>
+          <li>bozze, risposte e follow-up preparati dall'assistente, inclusa la cronologia delle approvazioni.</li>
+        </ul>
+
+        <h3>3.3 Google Calendar</h3>
+        <ul>
+          <li>identificativi dei calendari e degli eventi;</li>
+          <li>titolo, descrizione, luogo, data e ora, fuso orario e promemoria;</li>
+          <li>partecipanti e relative risposte di partecipazione, quando presenti;</li>
+          <li>disponibilità e fasce libere usate per proporre un appuntamento.</li>
+        </ul>
+
+        <h3>3.4 WhatsApp e contatti</h3>
+        <ul>
+          <li>numero di telefono, nome visualizzato e identificativi tecnici della conversazione;</li>
+          <li>testo dei messaggi, data e ora, e media eventualmente inviati o ricevuti;</li>
+          <li>note e classificazioni interne (per esempio “nuovo contatto”, “preventivo”, “possibile truffa”).</li>
+        </ul>
+
+        <h3>3.5 Dati tecnici e di sicurezza</h3>
+        <ul>
+          <li>log di funzionamento, errori, timestamp delle operazioni e cronologia delle approvazioni;</li>
+          <li>stato delle integrazioni e informazioni necessarie a diagnosticare un malfunzionamento;</li>
+          <li>dati contenuti nelle comunicazioni inviate al titolare per assistenza o sicurezza.</li>
+        </ul>
+
+        <div class="notice">
+          <strong>Dati di terzi.</strong> Le email e i messaggi possono contenere dati personali di clienti,
+          fornitori o altri contatti. Questi dati sono trattati solo per gestire la richiesta o l'appuntamento
+          e non sono usati per finalità diverse. Il titolare non raccoglie intenzionalmente categorie
+          particolari di dati (salute, convinzioni, orientamento, ecc.); se dovessero comparire in un messaggio,
+          saranno trattati solo per il tempo necessario alla richiesta.
+        </div>
+
+        <h2 id="finalita">4. Finalità e basi giuridiche</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Finalità</th>
+              <th>Base giuridica</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Leggere le email, classificare le richieste, preparare bozze, risposte e follow-up.</td>
+              <td>Esecuzione di un contratto o di misure precontrattuali (art. 6, par. 1, lett. b GDPR); consenso dell'utente autorizzato, ove richiesto.</td>
+            </tr>
+            <tr>
+              <td>Verificare la disponibilità, creare o modificare appuntamenti e inviare promemoria.</td>
+              <td>Esecuzione del servizio richiesto (art. 6, par. 1, lett. b GDPR); consenso, ove richiesto.</td>
+            </tr>
+            <tr>
+              <td>Ricevere e rispondere ai messaggi WhatsApp; avvisare il titolare di nuovi contatti o richieste urgenti.</td>
+              <td>Esecuzione del servizio richiesto (art. 6, par. 1, lett. b GDPR); consenso, ove richiesto.</td>
+            </tr>
+            <tr>
+              <td>Prevenire abusi, phishing, truffe e accessi non autorizzati; conservare l'audit delle approvazioni.</td>
+              <td>Legittimo interesse alla sicurezza del servizio (art. 6, par. 1, lett. f GDPR).</td>
+            </tr>
+            <tr>
+              <td>Adempiere a obblighi di legge o a richieste dell'autorità.</td>
+              <td>Obbligo legale (art. 6, par. 1, lett. c GDPR).</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          L'assistente <strong>non</strong> usa i dati per pubblicità, profilazione commerciale, vendita,
+          determinazione dell'idoneità al credito, sorveglianza o decisioni automatizzate che producano
+          effetti giuridici significativi. Non prende decisioni autonome su prezzi, contratti o rifiuto
+          di un cliente: le bozze e gli appuntamenti sono sottoposti all'approvazione del titolare.
+        </p>
+        <p>
+          I dati Google non vengono usati per addestrare modelli di intelligenza artificiale generali.
+          I fornitori AI ricevono il testo necessario a generare una risposta e non ricevono le credenziali
+          di accesso a Google.
+        </p>
+
+        <h2 id="google">5. Accesso a Google e revoca</h2>
+        <p>
+          L'accesso a Gmail e Google Calendar avviene tramite <strong>OAuth 2.0</strong>. Il titolare autorizza
+          l'app dalla schermata di consenso di Google e può revocare l'accesso in qualsiasi momento da
+          <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">myaccount.google.com/permissions</a>.
+          L'app non riceve e non conserva la password dell'account Google.
+        </p>
+        <p>I permessi richiesti sono limitati a:</p>
+        <ul>
+          <li><strong>Gmail</strong> — lettura dei messaggi e invio di email, per preparare risposte e follow-up;</li>
+          <li><strong>Google Calendar</strong> — lettura della disponibilità e creazione o modifica degli eventi approvati.</li>
+        </ul>
+        <p>
+          I token di accesso e di refresh sono conservati localmente, con permessi ristretti, e vengono
+          eliminati quando l'integrazione viene rimossa. Google può mostrare un avviso di sicurezza per le
+          app private non verificate; l'accesso resta comunque limitato al titolare e ai collaboratori autorizzati.
+        </p>
+        <p>
+          L'accesso ai dati è limitato al titolare e ai collaboratori autorizzati. Il titolare può esaminare
+          i dati solo per gestire una richiesta, verificare una bozza, diagnosticare un problema o tutelare
+          la sicurezza del servizio.
+        </p>
+
+        <h2 id="destinatari">6. Destinatari e fornitori</h2>
+        <p>
+          I dati non vengono venduti, affittati o condivisi per finalità di marketing. Possono essere trattati
+          dai seguenti fornitori, nella misura necessaria a erogare il servizio:
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Fornitore</th>
+              <th>Ruolo</th>
+              <th>Dati coinvolti</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Google Ireland Limited / Google LLC</td>
+              <td>API Gmail e Google Calendar; autorizzazione OAuth.</td>
+              <td>Dati dell'account, email, eventi e token.</td>
+            </tr>
+            <tr>
+              <td>Groq, Inc.</td>
+              <td>Fornitore di inferenza AI per generare bozze e risposte.</td>
+              <td>Testo dei messaggi, contesto della conversazione e istruzioni; nessuna credenziale Google.</td>
+            </tr>
+            <tr>
+              <td>Google LLC — Gemini API</td>
+              <td>Fornitore AI di riserva, attivato se il fornitore primario non è disponibile.</td>
+              <td>Testo dei messaggi, contesto della conversazione e istruzioni; nessuna credenziale Google.</td>
+            </tr>
+            <tr>
+              <td>Meta Platforms, Inc. / WhatsApp</td>
+              <td>Canale di messaggistica; servizio indipendente.</td>
+              <td>Numero, messaggi, media e metadati WhatsApp.</td>
+            </tr>
+            <tr>
+              <td>GitHub, Inc. — GitHub Pages</td>
+              <td>Hosting di questo sito informativo.</td>
+              <td>Log tecnici del sito (ad esempio indirizzo IP e user agent); nessun dato Gmail.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          I fornitori possono trattare dati anche fuori dallo Spazio Economico Europeo. In tal caso il
+          trasferimento avviene sulla base di decisioni di adeguatezza o delle clausole contrattuali standard
+          della Commissione europea, secondo quanto previsto dai rispettivi accordi.
+        </p>
+        <p>
+          I dati possono essere comunicati ad autorità pubbliche o a professionisti (legali, consulenti)
+          solo quando richiesto dalla legge o necessario a tutelare un diritto. In caso di riorganizzazione
+          dell'attività, i dati potranno essere trasferiti al successore, nel rispetto del GDPR.
+        </p>
+
+        <h2 id="conservazione">7. Periodo di conservazione</h2>
+        <ul>
+          <li><strong>Email e eventi:</strong> restano nell'account Google secondo le impostazioni del titolare; le copie locali e i log sono conservati solo per il tempo necessario a gestire la richiesta, l'appuntamento o un obbligo di legge.</li>
+          <li><strong>Token OAuth:</strong> fino alla revoca dell'accesso, alla rimozione dell'integrazione o alla scadenza tecnica del token.</li>
+          <li><strong>Bozze e cronologia delle approvazioni:</strong> per il tempo necessario all'audit e alla sicurezza, poi cancellate o archiviate in forma aggregata.</li>
+          <li><strong>Messaggi WhatsApp:</strong> per il tempo necessario alla conversazione e alla gestione della richiesta; i media non necessari vengono evitati o eliminati.</li>
+          <li><strong>Log tecnici:</strong> per il tempo necessario alla diagnosi e alla sicurezza, con rotazione periodica.</li>
+        </ul>
+        <p>
+          Quando un dato non è più necessario, viene cancellato o reso anonimo. Se chiedi la cancellazione,
+          elimineremo i dati locali controllati dal titolare; i messaggi già consegnati a clienti o fornitori
+          restano nelle loro caselle e sono soggetti alle loro informative.
+        </p>
+
+        <h2 id="sicurezza">8. Sicurezza</h2>
+        <p>
+          Il titolare adotta misure tecniche e organizzative ragionevoli per proteggere i dati, tra cui:
+          accesso al computer protetto da account personale, permessi ristretti sui file, connessioni cifrate
+          verso Google e i fornitori, separazione delle credenziali dal codice, registro delle approvazioni
+          e principio del minimo privilegio.
+        </p>
+        <p>
+          Nessun sistema è sicuro al 100%. In caso di violazione dei dati personali che presenti un rischio
+          per i diritti e le libertà delle persone, il titolare valuterà la notifica al Garante e agli
+          interessati nei termini previsti dal GDPR.
+        </p>
+
+        <h2 id="diritti">9. I tuoi diritti</h2>
+        <p>In qualità di interessato, puoi esercitare i seguenti diritti:</p>
+        <ul>
+          <li><strong>accesso</strong> ai dati personali che ti riguardano e alle informazioni sul trattamento;</li>
+          <li><strong>rettifica</strong> dei dati inesatti o incompleti;</li>
+          <li><strong>cancellazione</strong> dei dati, quando non sussistono obblighi di conservazione;</li>
+          <li><strong>limitazione</strong> del trattamento;</li>
+          <li><strong>opposizione</strong> al trattamento basato sul legittimo interesse;</li>
+          <li><strong>portabilità</strong> dei dati forniti, nei casi previsti;</li>
+          <li><strong>revoca del consenso</strong> in qualsiasi momento, senza pregiudicare la liceità del trattamento precedente;</li>
+          <li><strong>reclamo</strong> al Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it" target="_blank" rel="noopener noreferrer">garanteprivacy.it</a>).</li>
+        </ul>
+        <p>
+          Per esercitare i diritti scrivi a <a href="mailto:cshop0784@gmail.com">cshop0784@gmail.com</a>.
+          Potremmo chiederti di verificare la tua identità prima di procedere. Se il dato riguarda un
+          cliente o un contatto che ha scritto all'assistente, potremmo chiederti di indicare la conversazione
+          o l'email interessata per poterla individuare.
+        </p>
+
+        <h2 id="minori">10. Minori</h2>
+        <p>
+          Segretaria Ahsen non è destinata a minori di 16 anni e non raccoglie consapevolmente dati di minori.
+          Se ritieni che siano stati trattati dati di un minore, scrivi al titolare per richiederne la cancellazione.
+        </p>
+
+        <h2 id="sito">11. Cookie e questo sito</h2>
+        <p>
+          Questo sito informativo è statico e <strong>non usa cookie di profilazione, analytics o pubblicità</strong>.
+          Usa solo la memoria locale del browser (<code>localStorage</code>, chiave <code>sa-theme</code>) per
+          ricordare la preferenza chiaro/scuro. Puoi cancellarla dalle impostazioni del browser.
+        </p>
+        <p>
+          Il sito è ospitato su GitHub Pages. Il fornitore può registrare log tecnici (ad esempio indirizzo IP,
+          data e ora, user agent) per erogare il servizio e proteggere l'infrastruttura, secondo la
+          <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">privacy statement di GitHub</a>.
+          Questo sito non carica dati di Gmail o Calendar e non contiene il pannello di controllo dell'assistente.
+        </p>
+
+        <h2 id="modifiche">12. Modifiche all'informativa</h2>
+        <p>
+          L'informativa può essere aggiornata per riflettere modifiche tecniche, normative o organizzative.
+          La data di ultimo aggiornamento è indicata in cima alla pagina. Le modifiche sostanziali saranno
+          segnalate sul sito o, se necessario, via email agli utenti autorizzati.
+        </p>
+
+        <h2 id="limited-use">13. Google API Services — Limited Use</h2>
+        <p>
+          L'uso da parte di Segretaria Ahsen delle informazioni ricevute dalle API Google è conforme alla
+          <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">Google API Services User Data Policy</a>,
+          inclusi i requisiti di <strong>Limited Use</strong>.
+        </p>
+        <p>In particolare:</p>
+        <ul>
+          <li>i dati Google sono usati solo per fornire le funzioni dell'assistente richieste dal titolare: leggere e gestire email, preparare risposte e organizzare appuntamenti;</li>
+          <li>non sono venduti, affittati o ceduti a terzi per finalità pubblicitarie o di marketing;</li>
+          <li>non sono usati per pubblicità personalizzata, profilazione commerciale, determinazione dell'idoneità al credito o finalità di sorveglianza;</li>
+          <li>non sono usati per addestrare modelli di intelligenza artificiale generali;</li>
+          <li>non sono trasferiti a terzi se non a fornitori che operano per conto del titolare, per fornire il servizio, rispettare obblighi di legge o con il consenso esplicito dell'interessato;</li>
+          <li>l'accesso è limitato al personale autorizzato e i dati sono protetti con misure tecniche e organizzative adeguate.</li>
+        </ul>
+        <p>
+          Per domande sull'uso dei dati Google o per revocare l'accesso, scrivi a
+          <a href="mailto:cshop0784@gmail.com">cshop0784@gmail.com</a> oppure visita
+          <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">myaccount.google.com/permissions</a>.
+        </p>
+
+        <h2 id="contatti">14. Contatti</h2>
+        <p>
+          <strong>Ahsen Kurtoski — Ahsen-Studio</strong><br>
+          Feltre (BL), Italia<br>
+          Email: <a href="mailto:cshop0784@gmail.com">cshop0784@gmail.com</a><br>
+          Sito: <a href="https://ahsen-studio.netlify.app" target="_blank" rel="noopener noreferrer">ahsen-studio.netlify.app</a>
+        </p>
+        <p>
+          Questa informativa è redatta in italiano. Eventuali traduzioni sono fornite solo per comodità;
+          in caso di discrepanze prevale la versione italiana.
+        </p>
+
+        <a class="back-top" href="#top">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
+          Torna all'inizio
+        </a>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Segretaria Ahsen — home">
+            <span class="brand-mark" aria-hidden="true">S</span>
+            <span class="brand-copy">
+              <span class="brand-name">Segretaria Ahsen</span>
+              <span class="brand-sub">by Ahsen-Studio</span>
+            </span>
+          </a>
+          <p>Assistente digitale privato per email, appuntamenti e follow-up. Progettato e gestito da Ahsen Kurtoski, Feltre (BL), Italia.</p>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h3>Prodotto</h3>
+            <a href="index.html">Panoramica</a>
+            <a href="index.html#come-funziona">Come funziona</a>
+            <a href="index.html#faq">Domande frequenti</a>
+          </div>
+          <div class="footer-col">
+            <h3>Legale</h3>
+            <a href="privacy.html">Informativa privacy</a>
+            <a href="terms.html">Termini di servizio</a>
+            <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">Revoca accesso Google</a>
+          </div>
+          <div class="footer-col">
+            <h3>Contatti</h3>
+            <a href="mailto:cshop0784@gmail.com">cshop0784@gmail.com</a>
+            <a href="https://ahsen-studio.netlify.app" target="_blank" rel="noopener noreferrer">Ahsen-Studio</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ahsen Kurtoski — Ahsen-Studio. Tutti i diritti riservati.</p>
+        <p>Informativa aggiornata al 26 ottobre 2026.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
